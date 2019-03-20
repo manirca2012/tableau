@@ -1,0 +1,2067 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0627.2230                               -->
+<workbook source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='18.1' xml:base='https://public.tableausoftware.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableausoftware.com/workbooks/HrAnalytics?rev=2.3' id='HrAnalytics' path='/workbooks' revision='2.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='clean' />
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Hike Rate' datatype='real' default-format='p0.00%' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='0.087078539269634825'>
+        <calculation class='tableau' formula='0.087078539269634825' />
+        <range max='0.10000000000000001' min='0.070000000000000007' />
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (HR_Analytics_1)' inline='true' name='excel-direct.41833.528536666665' version='18.1'>
+      <connection class='federated' prefer-ind-semantics='true'>
+        <named-connections>
+          <named-connection caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665leaf'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Mohammed/Desktop/Population/HR Analytics/HR Analytics.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.41833.528536666665leaf' name='Sheet1$' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:R10001:no:A1:R10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='Age Groups' ordinal='0' />
+            <column datatype='string' name='Business Area' ordinal='1' />
+            <column datatype='string' name='Display Name' ordinal='2' />
+            <column datatype='string' name='Division' ordinal='3' />
+            <column datatype='string' name='Gender' ordinal='4' />
+            <column datatype='string' name='Length of Service' ordinal='5' />
+            <column datatype='string' name='New Hire Names' ordinal='6' />
+            <column datatype='string' name='Supervisor Level' ordinal='7' />
+            <column datatype='real' name='Annual Salary' ordinal='8' />
+            <column datatype='real' name='Attrition Rate' ordinal='9' />
+            <column datatype='real' name='Men salaries' ordinal='10' />
+            <column datatype='integer' name='New Hires' ordinal='11' />
+            <column datatype='real' name='Newhires Budget' ordinal='12' />
+            <column datatype='integer' name='Number of Records' ordinal='13' />
+            <column datatype='integer' name='Positions Available' ordinal='14' />
+            <column datatype='string' name='RatioOfMaletoFemale Sal' ordinal='15' />
+            <column datatype='integer' name='Terminations' ordinal='16' />
+            <column datatype='real' name='Women Salaries' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Age Groups</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Age Groups]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Age Groups</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business Area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Business Area]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Business Area</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Display Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Display Name]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Display Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Division</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Division]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Division</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Length of Service</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Length of Service]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Length of Service</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Hire Names</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[New Hire Names]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>New Hire Names</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supervisor Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Supervisor Level]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Supervisor Level</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Salary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual Salary]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Annual Salary</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Attrition Rate]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Attrition Rate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Men salaries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Men salaries]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Men salaries</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Hires</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Hires]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>New Hires</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Newhires Budget</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Newhires Budget]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Newhires Budget</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Positions Available</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Positions Available]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Positions Available</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RatioOfMaletoFemale Sal</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RatioOfMaletoFemale Sal]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>RatioOfMaletoFemale Sal</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Terminations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Terminations]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Terminations</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Women Salaries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Women Salaries]</local-name>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias>Women Salaries</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1$]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:R10001:no:A1:R10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Women Salaries' datatype='real' name='[Calculation_2200713132554566]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='If [Gender] = &apos;Women&apos; then [Annual Salary] end' scope-isolation='false' />
+      </column>
+      <column caption='Newhires Budget' datatype='real' name='[Calculation_2980720020329373]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if [New Hires] = 1 then (1+[Parameters].[Parameter 1])*[Annual Salary] end' scope-isolation='false' />
+      </column>
+      <column caption='Positions Available' datatype='integer' name='[Calculation_4430720012933569]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if ([Age Groups]= &apos;70+&apos; or [Age Groups] = &apos;66-69&apos; or [Age Groups] = &apos;62-65&apos;) then (1) end' scope-isolation='false' />
+      </column>
+      <column caption='New Hire Names' datatype='string' name='[Calculation_6380720021013450]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [New Hires] = 1 then [Display Name] end' scope-isolation='false' />
+      </column>
+      <column caption='Men salaries' datatype='real' name='[Calculation_7920713132015043]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='If [Gender] = &apos;Men&apos; Then [Annual Salary] end' scope-isolation='false' />
+      </column>
+      <column caption='RatioOfMaletoFemale Sal' datatype='real' name='[Calculation_8540713132649343]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='Sum([Calculation_7920713132015043])/Sum([Calculation_2200713132554566])' scope-isolation='false' />
+      </column>
+      <column caption='Attrition Rate' datatype='real' default-format='p0.00%' name='[Calculation_8570713124307557]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='Sum([Terminations])/(Sum([Number of Records])+SUm([New Hires]))' scope-isolation='false' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Mohammed/Desktop/Population/HR Analytics/Hr Analytics v2.twb Files/Data/TableauTemp/TEMP_10h5k4u08ploql1bnnf6f1x70bco.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Age Groups</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age Groups]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age Groups</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Business Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Business Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Business Area</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Display Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Display Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Display Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Division</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Division]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Division</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Length of Service</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Length of Service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Length of Service</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Hire Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[New Hire Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Hire Names</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supervisor Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supervisor Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supervisor Level</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Annual Salary</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Annual Salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Annual Salary</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1$</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1074</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attrition Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Attrition Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attrition Rate</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1$</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Men salaries</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Men salaries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Men salaries</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1$</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>516</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Hires</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New Hires]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Hires</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1$</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Newhires Budget</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Newhires Budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Newhires Budget</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1$</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1$</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Positions Available</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Positions Available]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Positions Available</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1$</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RatioOfMaletoFemale Sal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RatioOfMaletoFemale Sal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RatioOfMaletoFemale Sal</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1$</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Terminations</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Terminations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Terminations</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet1$</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Women Salaries</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Women Salaries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Women Salaries</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sheet1$</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.509915' measure-ordering='alphabetic' measure-percentage='0.419263' parameter-percentage='0.0708215' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Hike Rate' datatype='real' default-format='p0.00%' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='0.087078539269634825'>
+          <calculation class='tableau' formula='0.087078539269634825' />
+          <range max='0.10000000000000001' min='0.070000000000000007' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Attrition Rates_Agegroup'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column datatype='string' name='[Age Groups]' role='dimension' type='nominal' />
+            <column caption='Attrition Rate' datatype='real' default-format='p0.00%' name='[Calculation_8570713124307557]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Sum([Terminations])/(Sum([Number of Records])+SUm([New Hires]))' scope-isolation='false' />
+            </column>
+            <column datatype='integer' name='[New Hires]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec' />
+            <column datatype='integer' name='[Terminations]' role='measure' type='quantitative' />
+            <column-instance column='[Age Groups]' derivation='None' name='[none:Age Groups:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8570713124307557]' derivation='User' name='[usr:Calculation_8570713124307557:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='478' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' />
+              <text column='[excel-direct.41833.528536666665].[none:Age Groups:nk]' />
+              <color column='[excel-direct.41833.528536666665].[none:Age Groups:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Attrition Rates_Business Area'>
+      <repository-location derived-from='https://public.tableausoftware.com/workbooks/HrAnalytics/AttritionRates?rev=' id='AttritionRates' path='/workbooks/HrAnalytics' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column datatype='string' name='[Business Area]' role='dimension' type='nominal' />
+            <column caption='Attrition Rate' datatype='real' default-format='p0.00%' name='[Calculation_8570713124307557]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Sum([Terminations])/(Sum([Number of Records])+SUm([New Hires]))' scope-isolation='false' />
+            </column>
+            <column datatype='integer' name='[New Hires]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec' />
+            <column datatype='integer' name='[Terminations]' role='measure' type='quantitative' />
+            <column-instance column='[Business Area]' derivation='None' name='[none:Business Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8570713124307557]' derivation='User' name='[usr:Calculation_8570713124307557:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' include-totals='true' palette='tableau-red-blue' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' />
+              <color column='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' />
+              <text column='[excel-direct.41833.528536666665].[none:Business Area:nk]' />
+              <text column='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Attrition Rates_Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column caption='Attrition Rate' datatype='real' default-format='p0.00%' name='[Calculation_8570713124307557]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Sum([Terminations])/(Sum([Number of Records])+SUm([New Hires]))' scope-isolation='false' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[New Hires]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec' />
+            <column datatype='integer' name='[Terminations]' role='measure' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8570713124307557]' derivation='User' name='[usr:Calculation_8570713124307557:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[excel-direct.41833.528536666665].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Attrition Rates_Lengthofservice'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column caption='Attrition Rate' datatype='real' default-format='p0.00%' name='[Calculation_8570713124307557]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Sum([Terminations])/(Sum([Number of Records])+SUm([New Hires]))' scope-isolation='false' />
+            </column>
+            <column datatype='string' name='[Length of Service]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[New Hires]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec' />
+            <column datatype='integer' name='[Terminations]' role='measure' type='quantitative' />
+            <column-instance column='[Length of Service]' derivation='None' name='[none:Length of Service:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8570713124307557]' derivation='User' name='[usr:Calculation_8570713124307557:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <alphabetic-sort column='[excel-direct.41833.528536666665].[none:Length of Service:nk]' direction='DESC' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' include-totals='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' />
+              <text column='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[excel-direct.41833.528536666665].[none:Length of Service:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='MaletoFemale Division&amp;BusinessArea wise'>
+      <repository-location derived-from='https://public.tableausoftware.com/workbooks/HrAnalytics/Analysis?rev=' id='Analysis' path='/workbooks/HrAnalytics' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column datatype='real' name='[Annual Salary]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Business Area]' role='dimension' type='nominal' />
+            <column caption='Women Salaries' datatype='real' name='[Calculation_2200713132554566]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='If [Gender] = &apos;Women&apos; then [Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column caption='Men salaries' datatype='real' name='[Calculation_7920713132015043]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='If [Gender] = &apos;Men&apos; Then [Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column caption='RatioOfMaletoFemale Sal' datatype='real' name='[Calculation_8540713132649343]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Sum([Calculation_7920713132015043])/Sum([Calculation_2200713132554566])' scope-isolation='false' />
+            </column>
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Business Area]' derivation='None' name='[none:Business Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8540713132649343]' derivation='User' name='[usr:Calculation_8540713132649343:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='630' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' include-totals='true' palette='tableau-red-blue' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' />
+              <color column='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' />
+              <text column='[excel-direct.41833.528536666665].[none:Division:nk]' />
+              <text column='[excel-direct.41833.528536666665].[none:Business Area:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='MaletoFemale Division&amp;BusinessArea wise (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column datatype='real' name='[Annual Salary]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Business Area]' role='dimension' type='nominal' />
+            <column caption='Women Salaries' datatype='real' name='[Calculation_2200713132554566]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='If [Gender] = &apos;Women&apos; then [Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column caption='Men salaries' datatype='real' name='[Calculation_7920713132015043]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='If [Gender] = &apos;Men&apos; Then [Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column caption='RatioOfMaletoFemale Sal' datatype='real' name='[Calculation_8540713132649343]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Sum([Calculation_7920713132015043])/Sum([Calculation_2200713132554566])' scope-isolation='false' />
+            </column>
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Business Area]' derivation='None' name='[none:Business Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8540713132649343]' derivation='User' name='[usr:Calculation_8540713132649343:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[excel-direct.41833.528536666665].[none:Business Area:nk]' direction='DESC' using='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' include-totals='true' palette='tableau-red-blue' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]</rows>
+        <cols>([excel-direct.41833.528536666665].[none:Division:nk] / [excel-direct.41833.528536666665].[none:Business Area:nk])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='MaletoFemale Lengthofservice'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column datatype='real' name='[Annual Salary]' role='measure' type='quantitative' />
+            <column caption='Women Salaries' datatype='real' name='[Calculation_2200713132554566]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='If [Gender] = &apos;Women&apos; then [Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column caption='Men salaries' datatype='real' name='[Calculation_7920713132015043]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='If [Gender] = &apos;Men&apos; Then [Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column caption='RatioOfMaletoFemale Sal' datatype='real' name='[Calculation_8540713132649343]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Sum([Calculation_7920713132015043])/Sum([Calculation_2200713132554566])' scope-isolation='false' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Length of Service]' role='dimension' type='nominal' />
+            <column-instance column='[Length of Service]' derivation='None' name='[none:Length of Service:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8540713132649343]' derivation='User' name='[usr:Calculation_8540713132649343:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='307' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' />
+              <text column='[excel-direct.41833.528536666665].[none:Length of Service:nk]' />
+              <color column='[excel-direct.41833.528536666665].[none:Length of Service:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='MaletoFemale Supervisor&amp;Business area'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column datatype='real' name='[Annual Salary]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Business Area]' role='dimension' type='nominal' />
+            <column caption='Women Salaries' datatype='real' name='[Calculation_2200713132554566]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='If [Gender] = &apos;Women&apos; then [Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column caption='Men salaries' datatype='real' name='[Calculation_7920713132015043]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='If [Gender] = &apos;Men&apos; Then [Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column caption='RatioOfMaletoFemale Sal' datatype='real' name='[Calculation_8540713132649343]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Sum([Calculation_7920713132015043])/Sum([Calculation_2200713132554566])' scope-isolation='false' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supervisor Level]' role='dimension' type='nominal' />
+            <column-instance column='[Business Area]' derivation='None' name='[none:Business Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supervisor Level]' derivation='None' name='[none:Supervisor Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8540713132649343]' derivation='User' name='[usr:Calculation_8540713132649343:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='whisker-stroke-size' id='refline0' value='2' />
+            <format attr='opacity' id='refline0' value='217' />
+            <format attr='palette' id='refline0' value='bp_gray50' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[excel-direct.41833.528536666665].[none:Business Area:nk]' />
+            </encodings>
+            <reference-line axis-column='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='false' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#b40f1e' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]</rows>
+        <cols>[excel-direct.41833.528536666665].[none:Supervisor Level:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='NewHires Divisionwise'>
+      <repository-location id='NewHires' path='/workbooks/HrAnalytics' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Hike Rate' datatype='real' default-format='p0.00%' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='0.087078539269634825'>
+              <calculation class='tableau' formula='0.087078539269634825' />
+              <range max='0.10000000000000001' min='0.070000000000000007' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column datatype='real' name='[Annual Salary]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Business Area]' role='dimension' type='nominal' />
+            <column caption='Newhires Budget' datatype='real' name='[Calculation_2980720020329373]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='if [New Hires] = 1 then (1+[Parameters].[Parameter 1])*[Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column datatype='integer' name='[New Hires]' role='measure' type='quantitative' />
+            <column-instance column='[Business Area]' derivation='None' name='[none:Business Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2980720020329373]' derivation='Sum' name='[sum:Calculation_2980720020329373:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <alphabetic-sort column='[excel-direct.41833.528536666665].[none:Business Area:nk]' direction='ASC' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='18' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[excel-direct.41833.528536666665].[sum:Calculation_2980720020329373:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[excel-direct.41833.528536666665].[sum:Calculation_2980720020329373:qk]' include-totals='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[excel-direct.41833.528536666665].[sum:Calculation_2980720020329373:qk]' />
+              <text column='[excel-direct.41833.528536666665].[sum:Calculation_2980720020329373:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[excel-direct.41833.528536666665].[none:Business Area:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Positions available Division wise'>
+      <repository-location id='Positions' path='/workbooks/HrAnalytics' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+          </datasources>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column datatype='string' name='[Age Groups]' role='dimension' type='nominal' />
+            <column caption='Positions Available' datatype='integer' name='[Calculation_4430720012933569]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='if ([Age Groups]= &apos;70+&apos; or [Age Groups] = &apos;66-69&apos; or [Age Groups] = &apos;62-65&apos;) then (1) end' scope-isolation='false' />
+            </column>
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4430720012933569]' derivation='Sum' name='[sum:Calculation_4430720012933569:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='482' />
+            <format attr='height' value='255' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[excel-direct.41833.528536666665].[none:Division:nk]' />
+              <wedge-size column='[excel-direct.41833.528536666665].[sum:Calculation_4430720012933569:qk]' />
+              <size column='[excel-direct.41833.528536666665].[sum:Calculation_4430720012933569:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (HR_Analytics_1)' name='excel-direct.41833.528536666665' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Hike Rate' datatype='real' default-format='p0.00%' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='0.087078539269634825'>
+              <calculation class='tableau' formula='0.087078539269634825' />
+              <range max='0.10000000000000001' min='0.070000000000000007' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='excel-direct.41833.528536666665'>
+            <column datatype='real' name='[Annual Salary]' role='measure' type='quantitative' />
+            <column caption='Newhires Budget' datatype='real' name='[Calculation_2980720020329373]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='if [New Hires] = 1 then (1+[Parameters].[Parameter 1])*[Annual Salary] end' scope-isolation='false' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[New Hires]' role='measure' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2980720020329373]' derivation='Sum' name='[sum:Calculation_2980720020329373:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[excel-direct.41833.528536666665].[sum:Calculation_2980720020329373:qk]</rows>
+        <cols>([excel-direct.41833.528536666665].[none:Gender:nk] / [excel-direct.41833.528536666665].[none:Gender:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Attrition Rates'>
+      <repository-location derived-from='https://public.tableausoftware.com/workbooks/HrAnalytics/AttritionRates?rev=' id='AttritionRates' path='/workbooks/HrAnalytics' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='48276' id='1' name='Attrition Rates_Business Area' w='73449' x='983' y='49996'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='margin-bottom' value='0' />
+              <format attr='margin-left' value='0' />
+            </zone-style>
+          </zone>
+          <zone h='48268' id='3' name='Attrition Rates_Agegroup' w='36724' x='983' y='1728'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='margin-top' value='0' />
+              <format attr='margin-left' value='0' />
+            </zone-style>
+          </zone>
+          <zone h='52535' id='4' name='Attrition Rates_Lengthofservice' w='24585' x='74432' y='45737'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='margin-right' value='0' />
+              <format attr='margin-bottom' value='0' />
+            </zone-style>
+          </zone>
+          <zone h='44009' id='5' name='Attrition Rates_Gender' w='24585' x='74432' y='1728'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='margin-top' value='0' />
+              <format attr='margin-right' value='0' />
+            </zone-style>
+          </zone>
+          <zone h='48268' id='6' name='Sheet 10' w='36725' x='37707' y='1728'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+            <format attr='margin-top' value='8' />
+            <format attr='margin-right' value='8' />
+            <format attr='margin-bottom' value='8' />
+            <format attr='margin-left' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Gender Descrimination'>
+      <repository-location derived-from='https://public.tableausoftware.com/workbooks/HrAnalytics/GenderDescrimination?rev=' id='GenderDescrimination' path='/workbooks/HrAnalytics' revision='' />
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97142' id='5' param='horz' type='layout-flow' w='97538' x='1231' y='1429'>
+            <zone h='97142' id='3' type='layout-basic' w='97538' x='1231' y='1429'>
+              <zone h='48571' id='1' name='MaletoFemale Division&amp;BusinessArea wise' w='97538' x='1231' y='1429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-top' value='0' />
+                  <format attr='margin-left' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='48571' id='7' name='MaletoFemale Lengthofservice' w='48769' x='1231' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-bottom' value='0' />
+                  <format attr='margin-left' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='48571' id='9' name='MaletoFemale Supervisor&amp;Business area' w='48769' x='50000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-bottom' value='0' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+            <format attr='margin-top' value='8' />
+            <format attr='margin-right' value='8' />
+            <format attr='margin-bottom' value='8' />
+            <format attr='margin-left' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='Succesion Planning '>
+      <repository-location derived-from='https://public.tableausoftware.com/workbooks/HrAnalytics/SuccesionPlanning?rev=' id='SuccesionPlanning' path='/workbooks/HrAnalytics' revision='' />
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97142' id='5' param='horz' type='layout-flow' w='97538' x='1231' y='1429'>
+            <zone h='97142' id='3' type='layout-basic' w='72923' x='1231' y='1429'>
+              <zone h='48571' id='1' name='Positions available Division wise' w='72923' x='1231' y='1429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-top' value='0' />
+                  <format attr='margin-left' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='48571' id='8' name='NewHires Divisionwise' w='36462' x='1231' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-bottom' value='0' />
+                  <format attr='margin-left' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='48571' id='10' name='Sheet 10' w='36461' x='37693' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97142' id='4' is-fixed='true' param='vert' type='layout-flow' w='24615' x='74154' y='1429'>
+              <zone h='35535' id='6' name='Positions available Division wise' pane-specification-id='0' param='[excel-direct.41833.528536666665].[none:Division:nk]' type='color' w='24615' x='74154' y='1429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-top' value='0' />
+                  <format attr='margin-right' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='7679' id='7' name='Positions available Division wise' pane-specification-id='0' param='[excel-direct.41833.528536666665].[sum:Calculation_4430720012933569:qk]' type='size' w='24615' x='74154' y='36964'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-right' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='12858' id='9' mode='slider' param='[Parameters].[Parameter 1]' type='paramctrl' w='24615' x='74154' y='44643'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-right' value='0' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='4' />
+            <format attr='margin-top' value='8' />
+            <format attr='margin-right' value='8' />
+            <format attr='margin-bottom' value='8' />
+            <format attr='margin-left' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='Attrition Rates'>
+      <viewpoints>
+        <viewpoint name='Attrition Rates_Agegroup'>
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Attrition Rates_Business Area'>
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Attrition Rates_Gender'>
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Attrition Rates_Lengthofservice'>
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Sheet 10' />
+      </viewpoints>
+      <active id='3' />
+    </window>
+    <window class='dashboard' name='Gender Descrimination'>
+      <viewpoints>
+        <viewpoint name='MaletoFemale Division&amp;BusinessArea wise'>
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='MaletoFemale Lengthofservice'>
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='MaletoFemale Supervisor&amp;Business area'>
+          <zoom type='entire-view' />
+          <geo-search-visibility value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+    </window>
+    <window class='worksheet' name='MaletoFemale Division&amp;BusinessArea wise (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' maximized='true' name='Succesion Planning '>
+      <viewpoints>
+        <viewpoint name='NewHires Divisionwise'>
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Positions available Division wise'>
+          <geo-search-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Sheet 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' hidden='true' name='Attrition Rates_Agegroup'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[excel-direct.41833.528536666665].[none:Age Groups:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Attrition Rates_Business Area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Attrition Rates_Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[excel-direct.41833.528536666665].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Attrition Rates_Lengthofservice'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[excel-direct.41833.528536666665].[usr:Calculation_8570713124307557:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='MaletoFemale Division&amp;BusinessArea wise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[excel-direct.41833.528536666665].[usr:Calculation_8540713132649343:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='MaletoFemale Lengthofservice'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[excel-direct.41833.528536666665].[none:Length of Service:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='MaletoFemale Supervisor&amp;Business area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='NewHires Divisionwise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[excel-direct.41833.528536666665].[sum:Calculation_2980720020329373:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Positions available Division wise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[excel-direct.41833.528536666665].[none:Division:nk]' type='color' />
+            <card pane-specification-id='0' param='[excel-direct.41833.528536666665].[sum:Calculation_4430720012933569:qk]' type='size' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <geo-search-visibility value='1' />
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Succesion Planning ' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nOy9eXQd133n+amqt+8b3nt42ImFALiBq0iKqxZqtWXLjmxHjpNOpj2eTDvp
+      ZNI50zmTM+4/us9MTjqdk9Mdp5PYEzuWvMsSZVkLJYvivokEV4AkCGLHw8Pb962q5g9QFGGC
+      IkCCm/A+5+DgLbd+dave/da993d/915BVVWVChUWKOK9zkCFCveSigAqLGgqAqiwoLlGAApj
+      QwMMDA6TL8kzJlbkApPh+NX3+UyCRDo/j9lRiYVDZLNxPjzRO+2b7qNHyMsKAKHBHi4HEzPm
+      b7C/n6HRILKqkklGSedL15gvEwpF+KjToyplQpOROedSLuUJR64/f4X54/LxX/PSq+/w81d+
+      ycVzJ+kbDpIv5JkMjnLizAVik+NMRBL0dB8jVSgyNDhIvlRmYmyEsYkws+3ZSt/61re+NfWy
+      wP/4q/+XaCLO/jOjrOyoZzwYQqM3UswmmIwmoRDn6NkRhk+8zUjRiRK9xETeiMuoEpyIoDeZ
+      SEUjxGIxBK0BpZghOBnFaLYgiQK5dILgRBid0UAiFsdg1BONJCjl04RjKQx6PUf378bsNPP+
+      7rN0tvkJhiLoTWbe+vlPsQVqMOpNDHTvZlz1U22DYCiKwWSesp8a5r/9138hkxzlzEgOfWaY
+      uGLGoNUgqkVi0TBHjvdSE3ARmowiKQX2fXiWtqZaJsbHKKkaKGWJRONk8iXMRgOCANFwBJ1e
+      SzZfQs5nmJwY4Wz/JD6HgclIErPZTDw8QSovYzLqEQThjhWMhUJ4sAdN7Wqs8Qv0DI+TjIfp
+      6+tnPJxgeGyMEwd2E8pKpMYuMjI2TEnUcPzkOY7sP8zAYD9Lly9HEm/+O2h+8wNBENBqVH76
+      L/9EXmshgwlz/DJqYDlb202cvZTEOH6SYtzNIt0QQoOZQ798B73ViuhZROrsHgy+BhLYaJHG
+      GFKq+b2vfRmtBIngZX7289cxNKzFnh5g1ca1HOmJszKg8Po7H9C5+TkuHTtE/dKlAERH+vjJ
+      q7/C3r4N5AyH9+1mZ0xmS5sRpZDgn/7H98mrAr7FG/jac9sA8NQt5sWvfYG//tu/RzeWw9Xl
+      4sDeQ7Q6Mgjueo6f6aMQPs1w3sVnNndy/GwfXkIc6U+RjifYsLyGfT1R1ESQ3/uz/4s6m4b3
+      Xv8ZzUuXsv9siAZdDK3DSX9IYvjYW5S8S3hkqZMf7NwHxTxf+sP/QLvfMp9lYcESj0xSzqq4
+      jBqqO5bx2vd+wNf+4KvsO3qWtvbFnOrpIeA1YlZVEKbKrtXhRiPmma1zc1ofQGOwsHrT4/yb
+      L2wnHJfZtm0TuUSSRz7zLIXgRWRzFVpBpL6+jhWrVrGosR6hmCEuW9i+eR2R8CRao4XPf+EF
+      1GKGjY9/BnNhgv6RCKgqh/bsoajCRDDMts1d/OsP32Lz5uXs23sEWZGJJAsEvE4AFLnMgT37
+      KAMTwRCqaOThbY+gZiOUZZVCOs7QeAhJa8RmMVy9hlIhS9/ZY2isAerr6tA76qk1xTg9KbFp
+      7RKsBi0btz+NrRxmsqDHbpIYHx9j9cPbcWuzpAqwcuNjPNTuJp5RAIH1a5fw6jtHabSmuZi2
+      sn51B3pBy2PPPksx1MfR7l7S+RJOrw+hXKLC7VO39GE6/Xo2Pv40m7Y/QWtdPX/4zW9QG6jh
+      yUc2s2LVGl548QV2PPksj+14hhp3Fc/s2M4zzzzGk089jVYzu+7tNU0glUJJYcXKlRh0Bqrd
+      OvYe6mbL4ztIjvSR0zhZuawNQdCxrKOZY4dPsKizBaurgXafwMGTl3niyR0YNSK1jYtQFBlN
+      Ic5EVsPqVcsw6SQEyiRlA20NAVaseQi308ni5gbK+RQam4/Guhqq3Tb89a2UClmaGnxkBQst
+      dQGaa50cP36Gh7Y/TVPAhWJws2JRFfFMiTXrH8ZtNaKqCmP9F5jISjz/uafRCTIWd4AlTdX4
+      Gjvw2o3kiwpSOU4wLbCqaxkaSWTj+of48MAeAks3s7TehdHhw2mWcPoasBpEbC4PDpePdV2d
+      eAMNeBwmFLTkY6NkRDtPPLUDMjFEazVb1y1FrDSBbhuNzoCiMyNIGsqilpKsoNEZMOl1mIwG
+      jGYrVrMRg9GEJEnYHQ40oojJZMRoMs26GSpUBsIq3K8s+o9voFxTOpfX2Nn5zU3IcplCoYhG
+      o0Gn0139XlVVyuUSGo32EwWgqirFYgFFnaEPUKHC/c7lnsPs7h5EVspse3gjWhTKxQJl0UAi
+      fAlVsOKproVCElVroZiKYrS5SEZDeGub8DrM/OAH36M60PCxAMrlMtls9l5eV4UFgsViQRRv
+      cwhKkNDIaXbvP4BVzWNxWBmJlnDrJggXAph7DjERF2ltriUZj1NCh6aUoiqe5plHt7PhofUc
+      PHr8YwEUCgXMZjOSJN3u9VWocEOy2SyyLN+WAMw2Fy5rDKPRjSTnmIwmcDrciEYBh8GGQ/Fh
+      VD14Mzk0RiMWs5lSWUCQ7TicDkrFAhf7B/BXBypNoAr3L9sWe5Gv6QQ0ecwAVNd38Hx9x23Z
+      fu6554FrOsGZTAaDwVCpASrcUbLZLFqtFq1We6+zAlQ6wRXuZ4YPMy2mQWcB/9J5PUVFABXu
+      X777FKjXxKUFVsLXd6OqKsGxUQStHr+3atohuWwKVTRgMkzVMHK5SCqbw6TXEY1EyeYLiJJE
+      bX09GkGoCKDCg8dw3ym6+0N4zDqS8SqGRkO4LTqCkTj5XJScaqa5oRY5l0WkTDhbpmtxPYdO
+      9KNTMgRallJ3xVYlHLrCA0c6GcdbHaC2poZfv/MropFJDu7bTVEsEs4UiU6MoDGY6Dl/hkPd
+      p68epzOYsNtsuFxupCsDZZUaoMIDR+uydRw4cJDhrIlHH3+CS0MTLKrdjKXKQ603TyQ8gd/j
+      oqa2CYPeiC8QwGJz0tykwyiWsVtMV21VvEAV7ipz8gK9+X+Cqnz83l4LD//RvOanIoAKd5WK
+      G7RChVmy89LOaXH9Dr2DrXVb5/UcFQFUuG/5y/1/iXJNE2iJewlb67aiqgrnzpxC0FvpbGue
+      dkwiFkLVWHFYjQCUC1lCsQR+bxWnursxWF04zDpc/gA6UawIoMKDx8UzRwimRQJCkhPHDzE0
+      Fsaqg1A8jarmyJY0NDc1QjFPsZCjKOrZsKKDY91nWLq0g73v7mHpuq2ERkcqbtAKDyCqiiRJ
+      KIrKgX17yeWy9J49hbXKQrqkkkvFsTmcnDt3inMXLwFgNNvY/PB6TnUfwWy1EAkNcer0qUoN
+      UOHBo2XJWjLdx5ElK1/8rS/RNzDO2hVL0FqstDWUiEZCNNTUkF+5HpPJhNPjQavVEYtG2LDp
+      cSx6SGeyOGzVFS9QhbvLXLxAL/e8jMrHnWC3wc2TTU/Oa34qAqhwV6m4QStUmCWTf/d3qNfM
+      B9D6fDi/8uV5PUdFABXuW8L/8D9B+dgNali6FOdXvkw0NEyirKMp4Lvtc1QEUOGBIxoaYu+H
+      53lPVagJBBgaGMDnD1BX7eJM3yB6kxOvUWAymSYZT2BzODBqRRC15NJxRJOb33ruWaASDVrh
+      ASWfTeFvric4EUVQy4RCQfovXyYYClLj83Cmp5ex0UHKqgZtOU4wlsbvsjERiaHTfNzPrdQA
+      t4GiKBQKBSKRCNFoFLO5l3BB4lxsFUadRI3DSL3LhNdqwKAVK2uGzhOBxiV81lmP3myivFgh
+      Fg5RXRNgbHScdRss2G0OAi4HGqMRSdSi14CsKBRkkc/VNKAxWq/aqniB5oiiKCSTSc6dO8fF
+      ixcZGxujUCgAKp1L3mdEcfB3J/7Xacd4rXo21+v5z0vGMHQ8AQY7LFAxzMULlN67d9qUSNFi
+      xbRq5bzmp1IDzBJFURgYGGD//v309/fPsPiqQLmsn7FRGUoVSPbsx3Dpb+ANPSz7Imz5M3At
+      uit5f1CxbN58x89REcAsiEQi7Ny5k8HBwU9MJ5e1oJv5uyelo1cSFaD7JTj9E1j5O/DIX4LJ
+      Nc85/nTwznfOTnvQ2D1G1n+u+ROOmDsVAXwCiqJw8OBB3n//fcrl8k3Tl8o60CnXfW4hx3rx
+      3PQP5RIc+y6cew0+921o3bFgm0U3ou/YxLRFIaoarKz/XDOjl87QH87jNQskZDPrVrTf8jkq
+      ArgBmUyG119/nd7e3psnvkK5rAOu3zGnRRjFR2zmg7IR+NFX4OE/ge1/AWKlD3Yz4uEgBw+d
+      wWfTYXA1cfHEXrLlPMkc1NQ0YFLTjEWTaCWJYjFDuayiigbkYgZRAI1Bj9VoZHg8XHGDzkQq
+      leKll16aU+EHpvoAM/CodByNcH3NcBVFhr3/Fd74UyhW1medDS6blrSqoZCP0T86QTYZp6ap
+      g3xqknPnL5HPxCirAoJaAklHW+siDHojLU3V+Bp8RJNZlnR2VmqA3ySTyfDyyy8zPj4+52PL
+      pesFoKHMY+LxWRytwof/MuX1ePZvQKz8NDeirWsTi5ZvQFGnmoyFXA6tToOo0YOygVIxj6iR
+      OH7kMOGUlycf3YYiiGzasBFJElERYAvkC8WKAK6lVCrxyiuv3FLhByiXtddtztYkBGkS5mDv
+      xL+CLQBb/xyEhV1B//Z/Wj/tvXRl1xet3sC1TlSzyTQtHeapNUS3PfrEJ9o3mUwVAXyEqqrs
+      2bOHS5cu3bKNclmHxPSO7HrxHAZhDtsmqcpUcyjQBW3zG/r7oOHwmm6e6DapCOAKQ0NDHDhw
+      4LZsyLKO6V1YdZbNn980VIRf/fnUUoCW2w/4elB56S/+ZFo0qKu2jqf/3f8xr+eoCICpps+u
+      XbuQ5Zn3R569HR26a2oAHzG6xL5bMxYfhL1/A0/+PwvWPTpx+RLqNdGgH92Hy2ePcHo0Ta1N
+      IKbYeWhZC1qd7sq2SRIqWd587zjPPL4VFBlZFRBUBQU4uOc9tux4hkO7XiMn6SsCAOjp6WFk
+      ZOS27SiKFkX5uLCuEc9jF27Dq9P9Eqz5A6hqu+28fZrIppOc7znFpEWHrGjZ997rVHstZFQn
+      ZjFH+5JGLvReIBkepd7v5PjZS0hCGavNRCqd5aHtTxANBxHc1RU3aKlUuu2mz7Vc6wrdJp68
+      PWOFFBz959vM0acPQRDxe6zIOjNanZ5AXT2LGhuobWhEJ4lk8wW8NQ2YdQI9Pb1IWhGT1U5t
+      dRVWqxlFURBFCU2lBoCRkRGCweC82ZPlKf+EniKbpNM3ST0Lzr0K2/8jGJ23b+tTQue6R+hc
+      98gNvr3R59P53IvfACp9AE6fnodCeg0fjQWsFc/jI377BtMT0L8blnz+9m09YPzJy6/d8XMs
+      6CZQsVjk8uXL82qzdFUAvYjCPG3B3PP6/Nh5wBAE4bq/+WZB1wChUIhY7AYxOrdIqaxHR4kv
+      Sbvnz+jlPZCNLrio0dH/dJBrd8rW1Vio+vryeT3HghbA6OjovNsslfSsFXupmo/mz0fkYpAc
+      XXACUPNlrlkWCKUw5aZOxIK88fb7qHKZjZu3Ui4WqampYXR4GJfHQyyRRCcoCJKWd3f9iral
+      a2kKuNHoTGTTCfRmG3Ixh85oXdgCmO+nP0z1AdaJvUjz1fwBUMpT4wL+ZfNn8wEmeLmXRStW
+      YU2N8erOn9La2sIrr7+KUatDFCXqW9qRkyGGxkJIQpGTJw4xMOAgGRxFMJsQRCM6OYOhqmFh
+      CyCdTs+7TUXW8KR49JaOlYGiIFAUBPKCQEmYep8RRLzZSRbumPB0aluWc3rXe6iqSlNtDRNj
+      YZYtWUI8EsFitVPjr+L45fM43R40FBD0djRqAac3gNVjJ59VsIh24vIC3yRvai7v/FJbimLX
+      hAgKEnlBICcKpEWRpCiSuvKXFEXygkBKFIhJEjlRICGK5ATxigCgIIgUrwhAEQT+3KDhd+Y9
+      t/c3Grdx2owwyTHlYDDbXHzxC78FQP+lXqzOaqpc9mnHrl4+u77CghbAvHkVVNCjoVn2Yw1P
+      8LNcFb94SCBkEuYtjKGs3HxG2qcN/5+tuWmaRc23PhsMFrgAdLobTOCdiw1VQ7scoLNchwUD
+      7xcuse5MNV1nx3hzrch7KyBjvH0RWLSW27bxoJHJZKa9F0URo9E4r+dY0AIwGAy3dqAKGiQa
+      FA9d5Uac6lThzMtZIrk+Jrwrab48xlffV9hxHF7ZKLJnqUBZc+tCcBoW3kjwX//1X09rAgUC
+      Ab7+9a8jy2UKhSKiKGEwTDWLyuUSoqhBFAXK5RKyoqLTaikVC5RlBb3BgCR+POylqiqlUmlh
+      C6Cqqurmia5FBS0S7XINHXINNnV6vHow24+s5gi522gafBtJKeNNwDfeVHj8BPx4i8jJJgFV
+      nJsQJEGi1lo7t7x+irncc5h9ZyeQUxM8+exnGB4aZ7jvJDUda1AyaUwGgcNnLvC1L/02P/vh
+      P2G0uqhuXIJByeH0+giNj+NweThycM/CFoDPN3u/ik7V0CnX0lmuxcT1Ux9VVWUkewGArMFI
+      ylKHI/nxKHNzEP7jTxR6a+FHW0V66mc/CG/T2fCb/bNOvxDIpBMIssR7b/wCo8NPMp3GmUly
+      8vB+9CYrBe3Hv5FeZyITC9I3NEBRKaLTOxE5S/fRIwtbAFVVVRiNRnK53A3T2BQjHXIti+UA
+      WiQEZn56l9US49l+AFQ5SdC/YZoAAASgYwT+75cUDrer/HizyJjn5rVBs6MZu85+03QLBbPN
+      xeYt20kG+xFQGZtM0tq+lFQ6QW19AyaDCcVgQiOJ1NbWU5Q1uNxukvE4VVYTNosbVckS8Fcv
+      bAGYTCZqamro67t+0opTMbNUrqdF9iMi3LDgf0SkMIbC1EilqqYIu5dQlgxo5OuXSRGBDb0q
+      q/tk9i4R+PnDImH7je2v8a9ZkOuKtrS0TOsDuN1uAKrrO6gGaG28qY1Hdzx39fW61Wuv+35B
+      C0AQBJYuXXpVAIIKXtVOZ7mWRsWLNMtYQVVVGcmc//i9kqZocpCwL8IdPXfD43RleOSkysPn
+      ZN5YK/DLdeJ1HiO9pOfR+kdv4eoefF588cU7fo4FLQCA1tZWzEYzrrSB5eUGvKp91gX/IxRk
+      xrMfT6ZX5QSqqhKqWvmJAoCpZpGhBF84oLLttMyrG0T2LBHIGaaEsNK7kjbnwpwRFk8cn7Y4
+      rqQxYbV0zOs5FrwATCYTX+58CnV/BPEWo8NjhSBZOXX1vapmAYWIq5OSxoi2fOM+xrW4U/D7
+      7yg8dRRe3ShyYInEC4tfQFygy6N8+OGXgI/nBFuty1i39lWSiTg6vYF4IoHZZECrN2HQfbxQ
+      SiQaRRAEFLmEy12FKAiEJ4NY7C7S8ShWhxv9lfQLXgCCIFD9cAsTHyZR87c2KX48N72zqyoZ
+      QKGod5CwN+OJnJl9foBADL7xhsILyirWfW3LLeXp08xg3yliBZU9ew+wonMRTm8dKCJ1fhfn
+      +wYZDQeZGB7GoCmzdPVWtm7azJuv/iu1y7dw8K2dPPHZ3yIWmcTpcizsCTEfITn12LbX39Kx
+      iioTvOL9uYqaAXUqdCFUtYpbiQuVdDpWv/jH6DUzL7e4kGloauXgvgOs6VrKpfEUx48eZHTw
+      Mj3nezm8/wOyZRV3lROzzc7E5BiZXBGb282p7iOoejMTwVGOHzvM4cMHKjUATNUC5g3V5Hoi
+      FAeSczo2U04SK078xqcqqpJCEI1Ene2UtGZ0pcyMx98Ix5e/jHHVqjkds1CwOjw8/PBmVixv
+      x1c9gVJIkMor2E0aVq9bj9nrQ1fKoQpgstjRayVaFnfhq82ikYxoRBWBVZit5ooAPkLUSTi/
+      2Ebov5+YU1MonB+ZtpnzR6hKGvBS1NtJ2FuoCs9+hQhjVxdVf/xHCOLCrqDrar+Gek0fwGAI
+      ACCIWjY9vAmAlcs904650f4xS5ZMf5h0XflfEcA1aD1G3F/tIPL9c6jFT1jN+RoKyswdXFX5
+      uCYZq96IJ3zyJiMJV/JQW0vgr/4K6cr6lguZtra/vOPnWNiPmBnQNztwfL51VndGVVUi+Zmn
+      VV4rgLi9mYLecVN72kCA2r//e3T1dbPOb4XboyKA30AQBMwrvXh+dwmC7pNvT1HJM5Gfedsk
+      VfnYLSprjESdn+y/1tbXU/edf8bQ1jr3TFe4ZSoCuAGGxS68/1sXmqobx5+H8oOUlJlnlalK
+      atowfqjqxrsbWp94gqaf/gR9U9OtZ7jCLVERwCegrTbj/cMuLFtqQTP9Vk2FP1y88cFqBvh4
+      FlfCvoi8fnpMv+TxUP1f/jM1/+1vkOyVYLdrycRDnDhxgsHx8PUuBqXMyFiQbDJJPBYinine
+      1F65kOHy0PXN1Uon+CaIRg32pxoxdVWRen+YXE8EyipltUSkcONlVVQlNzUWIEyNOMoaIxH3
+      EmrG9iE5HDi+/GVcX30RjcdzQxsLmbHeY8QMSzj11k42bljL0FiEpcs6OHP8ON7GViLj4/R1
+      H6Fj/UN4/I2cOnIBq6+B7EQ/2aLK8q5Ojh87RdvKDTQHnPSfPMhL753j3/+736WvbwhtKYPR
+      scCXRZktgiCgC1hwfaWd8mSWbPckYyfOkhv+pFUliqhqEYGpJpRGL6FsfApf53ZsO3ZUCv4s
+      GLh4lqpAE8eOHWfjmk72HznF2MUeZKON8dEQLocbjZzk1OF9eNvXc+rYXpRSkY6AgYvDYXrO
+      n8fR0ElzwM6JU+dprzFzbijO2Omj5IxumpORigDmgiAKaH1m7E+YMW+voTq6isHT3Uz0XyQy
+      MkQpn0culxEEAY3BgKvWicNfi6/Jhq/RhtGqu7rNT4VPxmC2sWrtEroanZw8vJszfRN0trdj
+      KKdRZBW3y4kdiWxeYFHHUsYGz1Lb3EE+HsTq0JA36GlprKdUKlHORNH5W3loaT0nLo2xrK2O
+      oKGJ8thZBPVKTy2TyWAwGJCkyjadt4qiyCiyjICAqNEsyBj+m5HNZtFqtWi12pumzWQyaDR3
+      9hldqQHmEVGUECv7/M4bR44cobq6+o4+SCr1cYX7FvU3t9y8A1QEUGFBUxFAhQVNRQAVFjQV
+      AVS4bxHvQjh4xQ1a4a4yFzfo3egEV9ygFe5b7sY4SqUJVGFBUxFAhQXN1SaQTqcjnU5Xhu8r
+      3FFUVZ3FsvQqv3jlVZ773CP84hdHaVnkZGx0mGWrNuJyWolGInj9AXRqju+9/BMaq92I3mV0
+      +HWoegvH9+9m9cPbyaWS+AIBdJ8Qf3VVAFqtFnslJr3CfUImNsHBQ0cJp7LI58ZRSkl+vvNt
+      Hmp10BdK4G1cxY7V9WSzWeJxLf5amaMHDnBhMotDU6T38C4GY0VcDct5auOSG56n0gSqcH+i
+      t7J+/WqMH+2loDHiNEIyX0ZnsOLzTM2xNrv8VDv0xIJDjCQVJFXGbDYiKyoag4Vqzyc/1K+6
+      QStUuH9QiUSiuFx2otE0AvLUnAythCxoSMaiVFUH0IsQiSdx2oxMxrIo+TSqzohVL1BGRzqZ
+      wBsIoNfc2LVfEUCF+xSVdCqJzmhBJ0I8mUSUdFhMesoKyMU8Gr0RVVXQzWJM4UZUxgEq3J+U
+      ovzo+y/hbX2Yz27v5NK5Dzk/KdFqDjFhbEPuP4nOV01VbTtrOhtu+TSVPkCF+5JyOonOXYsg
+      5EBrRK/V88j2jbS0taMVdKzcuI5cIs7AmWNEcrNbxGwmKgKocF8imd14zBLVgSomgjEkvRO3
+      VY/W5MDvseOtqqJjeRdmg4457jk4jUofoMKCplIDVFjQVARQYUFzjQBKHDvyIbKicuTAbtKF
+      T14ifNeud5AVle797xOMx9m79wizW1Q8y8+/9y/86w9/ytBEnGD/aXqHI1e/VeUCe/cdumpL
+      VRU+2LNnDqGxKt0HPyBx88XC7hijfaf4/ve+x7mBUV767j+SmHn1xKso5QLhWGLaZ6nJYXoH
+      JlDKed7/1Su88qtfUyhXWqvzjfStb33rW1MvS/x/f/vXqN7F9HXvpa6lk6O73+J0/wR6OcVE
+      TiI0dAm708CBI70c2vM2/pp6Dux6C43Tw9hEAk02yL5DRylpzPSd2Mexs4NU+xy888udxGUT
+      tT4nkObVXxzk2ac38JOf/hJRziDqzQyPhLDr8hw9doq+iRQBc4nX33wPq8XEsZ4hljRW8cbr
+      OxmOFTHJUd7bvZ+e/jGsmjzDcYXE2GV0VjOHDx1m4MJlahqqeXPnTlRzFdmJC7y5ay8mtx+X
+      1fRJ92NeePUH38G35CHq/R6O/PpNBsfDiCYnRjnJL994g1hRh9ci8OYvX2coWiQ9cIRvv/wG
+      dc2dVDlMFJIh/uG//y1FRxuG6BnOJa3Y031MSj4avLY7nv+FxLRxAJPbT6L/BMORDD2H3uLN
+      /b3oygnEHc8yNnyK7Nh5eto60dV0QSlDd3c345EkD9ksDA+cwpLOolavQxM5y8/eOYhdk6cg
+      FwiOhKlf/vFghaTVUdO4GJP4K0TZQqyoIXRyDyO9GtrXbma8exdBb5lUScJocxEevcQHr49g
+      aHmUkYO/pNhcx0TRiXPyDAN+J2e736YUHaK6qRWci8jGJghPjjESTrNCSPNP//A9nAEv338p
+      zV/+h9+/44Mfn3nht9n52mukCzKCpKdraSu/fPNt6pQRBrIG9h/qpn9JDRfGsmR27+FzX/w8
+      voY26n1ThVtrdvHMjq2cKUAsEqWmYSPu8CRDybntMlPh5kzvAwgSWx9/DKtei8XuxKiTqG1b
+      zYb16zHnxtj0hX/DhbN9bFnTBkYXn//88yxp9KPV65FEEZCobWjA7fFgMWjx1HWyacMaGjwm
+      3njr3aunSYVH+NH3v4sxsBy33QSijofXtDCcNdPR4EWrEfHXNVMK9XLo3Ag6jYC7qoqLp44S
+      yqpYdBLOKh8BnwutLYCLKKt2/BbDF/vY+NAKDHotVnc1VaYib75/HI/bhqg1sWPHNu7GfLcL
+      586g0RuJx+NodAYaGhrQakRcHjeSJLHh0ado9HvQSCLLNj1BZ4OX2NhlhoLxqR9F0qC9siBU
+      7aJmjr67k/e7h+horrkLuV9YXOMGVZgIhvB4/RRyKbR6E9HQGNkS1NXVUUgnMThMlCMAACAA
+      SURBVFitZFMprDYb4+Pj+P1+4uEQBruDZDyNQVLQWByYdRLhiXGSuTKBgJ+J8TGsLh8umwko
+      M9w/hKozEgj4KWbilCUTFp1AtihjMegIhqPYDBITkRSBujrikUm8VW5GR0bQW91YtDI5RYdO
+      ySEYbIjlHBqjlVw2hdVqJRYKYbRZCY4Fcftr0SpZxkNRnJ5qnLYbL3c+X6TjYSbjWQK1ARLh
+      MC6Ph3AsQZXDzMjoOFqjjWqPjdGRUWSNkYZAFWPDQxidPpzWqfwVMgmyig6HRU84OIasMeOv
+      ct7kzBXmSmUcoMKCpuIGrbCgqQigwoKmIoAKC5pKOPSnkBMH3ydRENBavbT6DGQEC/pSkkRZ
+      h88Kb+/v5plt6xmeTON36UkVNDTW+kAtMZiSabAZiI9dZP+pQQRFYMu2NfRdGqex2s1wcILm
+      5ib6ug8R1dfh0xXx19YQCoZpamvlJvsK3ndUOsGfOhTeeeddVi9r40RPP8GRYUxOL2qxgMGs
+      R5BBkEBJx8irRkQdrN/6JNUOI7noKKoqYXL7OX9kF9qm9Yx8uJtQuoRWKiMoGlzVbkaH47Qs
+      ruZ8z2VUQcTtNCOZa3js4RU8aGsqVGqATx0i7Y1+zl4cwmBx0tygUjY60cpltAYNYiHN5XCe
+      9uZFjEZL2GxaLPqpYpDJFRCtNZiAxo6VHDz2IbLGSEdbLcMTUXw2M1aPA4PRTmR8lPpFzWRi
+      UXzVVQg65wNX+KFSA1RY4FytAcrlMtls9l7m5Y5RKhdQ1Pxt21ERcNn9d3zbngp3j6u/pEaj
+      wWb7dAZaBScvkVZ6b9uOWtZht1TdcQGk02ksFst9a+9O2LwTeZwNM/6Sl7p30x0y8fxjq4lG
+      olgcDtKJGGa7i3wqhmSwoZYLCAKIgkA2V0CrZjh1OcGy1gBaoxWLQcOhD35NVlZw1HTQVGVA
+      lYyY9QLpvIJBo1KQQS0V0Ok1HDl2Fr/XRdOiBjK5MlajhlQmh83hJBWLYHF6MGgXxsrVijLz
+      HFellCeaLmAzasgWwWEzz96eqpLKZNBLArJkwKj7+F5m0imMZiuiAMlYlDIiDqdjBh+5QiqV
+      w2o1T8tjIZtBlTTkcnkMWhGNwYJWmluH4EbXfKe5XgCqTPeZfiIFiUtn4exYmoAJhlIyi6tt
+      nOqPgFxAziXRaCScepGCRkRncBPPFjiz/1d4l27j85s7GIyV+OLTW/jZa29zeHIMm9kJUprJ
+      mITfIdLctZqLxw4huupIxzNEQ0P09JzFahBJpfPoTRYkm5uTH+zioc/+Ho+sWnQPbtH9Q2bs
+      LH/57V/zwhY/5yJONrW7sAYaiAwMIlhdrFrWfuP5sUqJN9/eRVe1lmFNI4ZyAk9gEYXIEMdP
+      nWfrto1MxrMc2HOYzvZW6hvdRCJp2ha3cLHnAouXdnLh3GkuDsb42leem2Z6tOcI5yaLHPnw
+      AqvbquhYtZrQZJKGKhOD47Gp4MbGVuIjF7B664iMDSMYnaxa0X7PB6KuE0AhMU7J4KXVWWQk
+      XqSQSSJbPcjZEAXVhaacRWNxIihJxpIlfM4qagIOYmkdqewkgboAmWwWSW/Gayjz/p69BJoW
+      Ex7rB50Rl82Iw+9ByoRxmkSysganTo/VkEPSGrAYJNJ5GYfDSqCukcvhHA2N1WRTqXtxf+47
+      am0Kx8fzuNKXeO/IJJ2daSJjRYyaQZYuacdww0pSQFVUVFWlnAiSMJkZ+vVb4GnCqhd5/523
+      sPjqMNrqKCdCnO8Zp8rt4dWfv4LO6iY+OYyhcQWCGr/Osreunpd/+TLL2xu5lBQpHDnOsiY7
+      b7zTT3NLMylVonfXmySyJdqaEkQTKsbSIEtWtHPnQxM/mbviBVLkEkeOnWD9Q+vu9KlmZD77
+      APWeLej1+nnI1Y1JJpMz9sfykUG6+yeQBQmpqJLLhPA0tFBIltGKWTq71qCd4ZGaTCaxWa2c
+      6z7CWCTDso4mImUN2VCEQiZCVtYQ8BgJJhSMejtWKYOiAafdSjxbZnRwiKVdy+k914ve4mbL
+      +q5peVRLWd557yCrVzRwdrRMrSFDfyhNjduIxmBDVkXSRZlMaABXzSKKBQVtOUPHmjXobnLN
+      d5oF4Qb9tAjgfrF3J2zeKwEsCH+eioo8yxnLn8x82KhwP7EgBDDF7Vd06jzYmA35/O2PWVxL
+      LpebV3t3wmY+n79/aoAz+1/n0LiZ3//cw5w/c5JTg1HWdtZTVrWgNRKfHKOpvoZwLIXdqJDC
+      STkTx22Bvd3DLGuvxWq1E4tn0OTHGExKVHlqcelyGDx1KOkQyYJAa3MTsaGT/PPLb/Ps73yd
+      pXVOBk7u5f1TYzz61JPkQiME6moZGBjG4nRh0YoMjQ7T1NDIRCRFY42bgeFJWlqb5+x2A+g5
+      cxlVValr8HF4/2kS8QzLV7XS0FTNe28dQZZltFoNNruZmlovofEsTU8/cts3/WYYDIZ5Lwx3
+      onB9GsaNZnCDljhxZohsWeLcCQ3jBT2FVJxDx2IkszksRhM6rUR04CIGl4meNGj1Fnq6j7Nh
+      61a0QpEPDp9mfUsVh7rP0trSgtZs4cKJ/Wi8bZQ/fAO5XMBiMOAK1BCdjKGKAtFQEOqcVNU1
+      Y+kZpu/o+5wfi7N4sI++jAW/2EumDBa9SP+Fi3R2reXXb+4knBHR2D20VjvmdOGqqhKLJMjl
+      CgwPBolFk7Qurmegb5TWxfXUN/rR67UYjHref+coJpOB0eHofN33m6IoCuPj4wiCwMTEBF1d
+      XeTzeU6dOoXf7+fSpUssXryYoaEhVq9ejUaj4fDhw9TU1BAMBmlubmZychK3233H+ywPMjO4
+      QSfxta9ljblAAiPZ6DgOlwe71YAjl0OvkRAAkyTg8ZohlEOnN9O4qBGr1UYyHKa6tga5nMbm
+      qsLp9jCZTOFvaCEVn8BZ24xUTmHRadCIAqLOwOKWBkZHxlBWdZCIhtEbTJiravFlZfy1dRTT
+      errcDk6GddjVKBpR4HL/Zfx1jZRC6StzjeeGIAj4azz0nR+mVCrTf3EEr89FKpUlFk0ydHmc
+      x55az+EDp5FlBa/fzdCl2Hzc81lx5swZXnvtNZ5//nlOnDhBbW0t+/btIxaLUVtby/DwMF6v
+      lxMnTmA0GqmurubNN9/kxRdfRKPR8NJLL13djvSFF164a/l+0FgQXqDxyT6SytnrPi+XypRl
+      Gb1eRy6bJ5PJY7dbGBwYp7bOi8GoJxFPo9VqMBh1FLMiHXVP3RUvkMFg4Nvf/jbPPfccfX19
+      PPLII3znO99Bo9GwfPly+vr6eOqpp+jr62NgYIDHHnuMixcvcuTIEZqbm6mpqeHYsWNks1le
+      fPHFihfoBiygTvD1aLQaNNqpW2AyGzGZp4ZlWhfXX03jcFqvvjYYddwtJEliw4YN9PT0kMlk
+      OHr0KI8++ujVAm61WlEUhQsXLrBixQoGBgYYGBhg9erVnDt3DpfLRXV1NbW1tXctzw8iC7oG
+      mDNlPY2e7fdkHCCfz6PX62fcxbNcLqOq6g13X6+MA9yYGWoAhUQsTlkVcTjsSNcEl6iqSi6X
+      x2S6+QC2Ui4SiyfRmyxYTDNviymXCpRVCb1ubhVRsVhEp5vb01jg9mdr3O0nxWAkw//+8olb
+      Pv5vv9RFi/fuR1g+SMxQ8rL87Iev4HLoqFu+BqfNhlIsk4sHMXsbmBwfwWYQSJa0tNY66RtN
+      0Bywc34oTHujj97+MVauWUVh/BxvHQ2hKyfZtOUhBkaiVNmNOOwG0gWR8bFx3MYc4yU/5nIE
+      f8MigsP9iEYXFilPJJlHQqWlvZXecxdpa6mnr38Iu9PJnj2H+J3f/Som3a1Hh6qqypGDZ9BI
+      EhqNRDyeIhJOYDYbefzpDfzkB28TqK2ikC8RHA9jd1jQSha+8Xvbb+N2z418SeHMaOLmCW9A
+      rlQZuLsZMz56RUmLw65nqPcUwzYfhUSWcqwP1R3HoOYoFvPYNAI9p+NYzV5KGSv7D55G2bCC
+      gwdPUNW0mCrAG2hADH7Ia6+/RZXHgZq28dq747R5tKQkHRmrkeD4EI1dK9m76x1SgoFaw0VG
+      0xI+awGDxc/PfvxTTE4/xUyUjMHB5e7zOO0OjDMFvcwRrVZLPJokUFtFOpXF5bKxcm0HxWIJ
+      vV7H5UtjbNi0nECNh7On+8mUKgF5nzZmEICG2hoPql7H8s5F9PVewFMfQHBr0TgCSHIBFQWD
+      AE1aGA3nqPY5WdEFHo+X5SuWYzNo0WldFKK92Ko7eKJN4dxoipUbV5MsdbO6vYrDZ4doaKzB
+      WyMxOTLIkpUr2L33AMaGFayolzBoCmiNTnw1dQwOjFDf1ERWMpLVm8mnI+RKym3VAIIg4HRZ
+      SSbSOFxWBARy2QI2u5mRoRAT4xFq6rwMDwbZuKWL48d6kYQF7TP4VHL/dILlIoPBCA011fNu
+      enyyj5RyblZpVVVlbGSSmjrv9d+VdXe1E3w+mOKJv91zy3Ze/+YmltXYK53gT+Bez0f4GEl3
+      Rwr/XBEEYcbCX+HTyQKp01VUbn/K3d0Khqtw95ihBpDpP9/LufN9FMvTC42qKoRCk7OzrKqM
+      D/UzHp69F0NVFdKZT+fKFBXuT2aoAXK8/94+XHYNyXQCo8WGnCuQjY1h9S8il4xyqfcUGVlP
+      a72by6NxGqtt9A6F6Wj00dM/xvpNm7FJBd5859d0rX+Yof6LmFQZ0SIwHsxQE/AzMDyMt7oR
+      bW6SpGrEqCTJlWTO9sf4/d/7IjMP6cwfqqry3ltH0Oo0hENxLFYj8WgKk8XIM89t4rv/8BqB
+      mio0GomB/jGe+fxmdr1+gm/9xeyjQTPpNEazkUy6gPUubM1UYe7M2AQyWB00Nxjo7buAxl5F
+      PplHTVxGjsgYyVOWS9gleK//FBarDy0Zzhw/jUGznLPdJ2lcsgqbz8yGtcs5eOI0EmVsxTw6
+      n0R1XRe7P/gAV+NyYkffRbE04DWO0TsR5YmnP0skd+Gutctq6rz0940yNDCO1+/C63OxaftK
+      iqUyHo+D8GSMlWvaaVlcx3tvHSaTnn0zqpiJsetXbyGYrLR2rKbzigDSiSQGq4nQWBC320mq
+      oOIwQLIo4JrlKg8V5o8ZypqORXUeEqqWLdvX0Hf+Irb6RpS064obNI+Kil6AJXqRkVCGljoX
+      smimuTGAKBrwO0wIQD5fYuWqVZjkOOPhAkq2j8GJDNvXL2P3yRE2b/kM2lyIhGKkflEJp8NB
+      wGmlDHe8BhAEAavNhNtto6m5hkKhNBX+bJjy/6fTWeob/aRSWdo6Gti+Yx2H91yYtX2d2Ulz
+      g4fLIZlELAlUU8zE+MWPX2fTY8u4eGkSSSnRG9OyrRX6I24+s2P1nbvgCjMyowA2bNt29Z3f
+      67/yqmVGAw1NU/99gUYAamobrn638qGHr75eDGRTnUhGBxolT6BlFTaLEaibZm/tulVzvIRb
+      p7beR229b9pnqqpitZr46h88M+3zugYftV+pZy7Y7S4iZ0+zqHMFKlOiqKt2USzkcHurGL/U
+      j1EVCebBJIrkcjlKpdIctoStcLvcVS+QyfrRHldGbHcvsBIARZ1988Xttd8g/dw8SZOhMDV1
+      Po7t3Y3b9RzVThN1zc34GgN0H+lm9UNryObLpFUVs2rEaJz6SyaTczpPhVtnQbhBZcpkldsP
+      YxCU8qzTqoqC1eZgdChIS3vb1SZdc2cHAJu2br3t/FS4fWYQgMr4YB9Dk1naW2s4c7IHR3UD
+      HkORy+NJlnetuK0QhPuJXK6AIAgIgoAoCJRKZfQGHaIokEnnkSTxavixIICkzr5nkk2EON1z
+      CZPTjiKZ8TgrXqD7kesEIGfD7D0xwJNbVhAND9NzcYwtNdV8cOQ8T25ZzK73j/LcE+vvRV7n
+      FVmWeel/vsXG7cs5ceg8CFAslqlv8rFlx0qO7D1LeCJOMpFlw7alhCfijA9k6PqLL8zKvtnp
+      Z3lHM70jE1gslcJ/v3LdQJggiKiqglwuI8sK9a1LWRTwIMtlFFlGnYe4+vsCFZatbuHA+6ew
+      OS0osorTZSU4EkGr1aDTaXnq+Q2sWNvCsf09LF3VjCTNLXJEZzCgkyCXL96hi6hwu1xXA4hG
+      F48+tJhLYzE6WpsxOwU0BhtPbOni/EiMpx+7N8sbzjeKohKPpGhbUk+pUMbuNBMJJVi7qZO+
+      3hHMVgMmi5FYOEVdk48Th89T5ZvbRtWiJKHTG+Y84afC3WOGX0bAE2jEE5h6Z74yNuPyN/CQ
+      v+H65A8oWp2GJz53fVNOVVVUFcQrM+F2PPfQ1e8EefZLuaZDQ5zq6aekKlh9n5Ja81PIgng0
+      CYhohFl2YD+hrAqztQHEJ8MUCkXsAS/xUASWfHoeHp8mFogAhNkL4BMNzf52+Vs72eydGuQz
+      mKw3SV3hXnH9L6oUePftXaiSnoYmL0cOX6Jr7QomLp8DQaSqZTXLm/289qPvUjTV88XPPoag
+      5PjpD3+Kp3EJcmycpRs3UszkKUyeZ19PiFyqzL/9xot3PLxhLpTLMnvePY7JbCCXLZDN5Fm5
+      djHZbJ5FrTW88/ohmlprqGvwcaa7bypNEr75v+yYlX2NzoDNVCaZSYN4/0y7qDCd636ZUnKS
+      OA4e3/E4XouGfKGERigQL5nYsnUdF8+cg1KKifFxYvEMqYIMghavy06pXCYcDtPf081rv/gp
+      l4NJ/LVeHJ7q+6rww1Qs0Mp1ixkfmaRzWRMut429vz7B6FCIfL5IcCzC3vdOcHjfGS72DNG5
+      fBFO19ye5GeOHeS9D97jePfFO3QVFW6X6wSgtXlxi0ne3bWLUFqmffkqFje34NBm+WD3EdqW
+      LgG5hCPQTHr8POFUAbVcoChoyCSSuF02xseCWOwOTBYbXp8Xn8d1L67tE1EUhfffOsbSla2c
+      Pd1Px/Imspk8YyOTyGUFj9eB0aQnHksxPhah98wAi5c0zukcFqsWq6UKq63SBLpfub4JJOrY
+      /sTTV9+2Xfn/6JOfmZbshS99edr7x5+cHjw2jfZbzt8dpXPFInQ6DavXdWBzmPnqv32aXLbA
+      8ECQZStbcFfZMVuMxGMpJEnCYprbGjulUonJ4AQOX9MduoJ7z86dO5Flmc985jMcPHiQ/fv3
+      89WvfpUf//jHbNu2jb179/L888+j0+n4zne+w5NPPsnp06fp6uri+PHjeL1enn322XuW/wXR
+      CZ4JrVZD+2880bVaDVq7hs7l0zfjc7quTNaW59aWN1p9PLy1lUB14Hayel8jSRLDw8MUCgUi
+      kQjZbJZCoUCxWCSTySAIAseOHWPZsmXkcjmSySRarRaDwcC2bdu4dOnSPc3/guidCYho0d/2
+      n4bZh7Bm4zGCYwO8sfNVDp++tz/ynUSv15PJZOjv76dcLmM2m9FqtZjNZvx+P7Is09jYSDAY
+      xG63UyqVcLlchMNh/vEf/xGHY27L2s83M9YAiiwjqyrSFe+FqiioCEgaCVR1KiRCEJBEAVme
+      ChEWBAFJuj+D5AQEROH286bO4XmhN1vw+f34w1ls5nu9F+Kd47HHHuOxxx5jeHiY559/HvFK
+      mfmjP/ojAP70T/+UVCpFsVhk8+bN047dtGnTXc/vb3K9AMpZfrnzLWwOJw5jkcspA3I6iZ48
+      K7Y9i6s4wq8O9SEVk1Q5dXx4MUY6EWPDxk0sW+QmVjbi1hYIF/V0LKq5B5d0f1DIxvnw+Dm8
+      Ta04b2H/ggeFRK7EnguTgER3NPjJiUfGrvtoa1sVNuO98xFeJ4BSOkrR6GXbI5sYP/sBx88P
+      0bx6K63CEH2jEQqZizQt34gtuI9zoTIPb9nIwKVBohOX2T02zob17fzi9d14vAEaGmow3Z+V
+      wh3HYHWxetUyJtIqLueDv5XQjRiNZfnmD299Ad83/3jz/SUArb2aBstF3t21i4DPzpI160mP
+      9nBaENm4NYBRMfPu7kNEJDOrOu3kdWaqfR7UkgW9kuP8wCTtixdRkGzoF2jhBxBFCY2okkom
+      icSTOC0fr5BdzEzywf4ztLf46YvACj/0xQ2sW/bp9Rbdr1zfBBIk1m7+jRWQl7Ze88bJk089
+      Oe3rxY3T5/VWmELSGlAKI0TjGbhmn4psLEymVCQZneTsxSwWVSWR8EFFAHedBesGvRvks3HQ
+      WrH8xlqiksFKrVvP8GiYWouFkSzYBaEyKf4esCAEUFTzTJZHb9uOpJiZy7oQcrnMxNgo7sD0
+      cQWLy09zm5kVq0woKsgqiAgYDLrKpPi7zIwCyKbixDNFfN6qaTvEAOTSCUSjHb2kMhkcw2iv
+      wjLD3lnlQpa8opnxu7vN1Mqgt79ZhKDO3kY2HiKcBo/LgsEwvZMniBqcrrlNrqlwZ7hOAGox
+      yVu79rK4pR4VhcGLF/AH/AyMRvA5TZw5uofVn/8mLfoQP3vtTTZsfQx9fhLZ7CE3MYSiNVNb
+      6yUyHkS1ecmFhqhuamNi6CL+xg7GLp6kalEXzbXue3G9VykWSuzfdZroZJLNT67gwK7TqEDr
+      klo6Vzbxxo8O4KtxkYilERDIZgtoFQsr//2XZmXfYHFQ7XOjtzppqq26sxdT4Za5bmRHLmSQ
+      dVZaF7dBMsjl/l4OHzpCTNZz+uxFar12AFSdgzVLm7h09ihv7/mQy30XOHthiDqvlld+/jq5
+      fIaeE4dJ6dykLh/nSM8gfZcucPrECT48M/sV1u4UOr2W6noPKze0ceDdM8SjacITCVKJLPls
+      gaH+CVKJDF0PtRINJ0knsuRzs5/bm41PcLrnMulElPHQ3dtfuMLcuK4G0Fh9LKsd4eDhD6kP
+      eKiqbsBhs2GoqkbrKDEaimDXgyoXyOQVFrV3UecbQXJU43d58NUvZkVXlvbWABZfA+GRfsRA
+      K0vyl6ita0RXymC9T2JjJsdjPLStk2wmz4f7zmO1G8mk80Qnk1T5HaSTOboP9/H/t3cuQW1d
+      ZwD+rnQFQkISCAQSSIinAPEIhjhO7NiJmzQPtxOnM23c6aqdyTJdZTqTZTfNoplu6ulMN53M
+      dNN20emiM2mapnnZcWocSGKBbN56A5IQSKD3vbpd4GA7QGI7OAZb3+rO0bn/PZL+c8/5z/nP
+      /4sa9eZO92349VfXO3jxR+XVsf3ODjaAip6hw1sOnG2dN7py2ujdujby5FPfv3Z94zIpnDjx
+      GACmRqBr0wB0d2/W6XLuD+UHOP7sQwD0j7TTP7LZTkVRiC2u8dLL26NAq+Vy8Nr7jQfCGe5r
+      D/p+taYg0NC0m4FaPtx+v/FALINWCBXUiXuRfunu5gYr892z4wiQWArw+cQU6fUEkUiEaGJj
+      W51UKomiQGI5yOjoJcKx65lgIuHwVhjZ3EaSxEqUtXRx10ZEF8MUZEivxllN57bKS6UCHo8X
+      Ob+O5+o8O+0PKaUiqfVyVpkyd8a2EaCUXeHdT7ycPOImNO9lZrGArbGBic8iWJuaWZgLYmyo
+      Y/Ljc/z45V8yN/4ZdQ+P8OF7H9HfbiYp64gGZujubSeynCYZnMTc0U+Tzc7o/BS29i4i3mnE
+      WjMmMcO6YiQT9lCoaqLb2Ug6n2MxlsTR1s1ARw1//ePvefL0aT7yhEhHF4imZRqqNSRSG6jV
+      GmpNlXj8eX7x0+duaz6nKApv//MCFRUa5mdCqFQCBqN+M0PMi49z9rd/4XvPPcL59z+j3lLD
+      kccHePsfY7z+61vPEFNm/7N9H6Akg0pEq9MhqgUKmTU8l+ZIi1oUZApiLYu+ABa7nRq9CBS5
+      8M47mO09nP/4U2ztXUiKTMAXZGF2iZb2eqqEHJ6xUVqGjuEZfxeV0kRlwU9eVWQuEcJZp8NW
+      LTI1O4eChGhu58rEFwx0PEF7byf//WSGbqeWudAauooiwRSYRBUqs4qVtIDN2nBHs/NOl4P5
+      2RBqUUVFhYbegTbUKhWlkoKr18nl8RnqLDWEAlGif/+IYu7ge/fFYjEMBgNarZZUKoWiKAQC
+      ARobG8lmsxiNRiorKxkdHaWhoQGXy8Xy8jI2m41wOIzDcX+tbG3rAGq9haMDdiZnAnS1tjFY
+      ZUUtaolFfLR0dJDJCsiFeoRCilRWwtk7TK/VSmjOT8+zJ8ipa6gS8kiFNLUWO7YGE6mNHMd7
+      HiY46+XJp18gnUijEvKolQLWvIY6nUBlhRZLPs9qeBrPcoynjh9Hpa7i2NOneawkoxIUPv/4
+      XebXqnj+5HGqNSoErQZUVcRjcRRuz0QVBAF9dRW1ZiPpjRwlucSFD7/gxFMjzE4FyeUKWBpq
+      KRSK9A91Mny4h4sfHezoDpIk8cYbb/DKK6/Q0tLCm2++SWdnJwsLC0iShCRJnDp1CpfLhU6n
+      IxKJEAwGmZubo7+/n0uXLvHqq6/e66+xp+wYGtHe3oP9mvtK3bVNzDbnjYdbbsiqot/0YHT3
+      ffPJd5vl2gmguuu7wK1fqSM57PQjor0WT7On5/oSq8PeRFFRYzJUI9yg7Y6mRu6EJruFJruF
+      R45eL1MUhcRKihdfOrmt/vMvHNtWdpAQRZGRketpmA4fPkyhUKC2tpbp6Wmqqqrw+Xy43W78
+      fj/PPPMMZ8+eZX19nWQySTwep1QqbZ36uh/Yd6tAYoV210bpDaY7lHp7y6B19Xf6nP3PwMAA
+      er2esbExWlpakGWZTCbDmTNnSCaT1NTUcPnyZXp7ezGZTLz22mt4vV4GBwcZHx+/r5QfdkmQ
+      sTA1QSSRZfDQMAbtnfWRSCCApaUFDRCY9mJud5MOerkSTFBnddDvct6klr4ZLw2tbtbDV7gS
+      iNPk7MTltKEoCuFwhGZ7MwKwsrxIldmCTnPr7RIQEPcgNJey/94Xt43b7aZUKqHX69FqNw/p
+      OJ3X45bKsowkSVRec+EWRZHBwUEAhoe/u/xt3xXbE2RsRLk0FeWHJx9mPebjvXEvBrOFRHiW
+      dFFAW23GpMqS2thApdHS1dON5/IkTbZ6VnIaalU5SpUmKqUs4WiAqakojQaJfoeb6PwkupbH
+      8Y7/j5WFz4jmKumyVuP1x6ipkKhudrPknyG+oadFJfO3P/8JW0cfn14cduIy3wAABChJREFU
+      5eiRh5gLr1GZWcTkcLG8FOHwiVN0O/Zf0K39zOtvXeHC3Mod3furZ7t5wnV/OfZt6wCCqKWr
+      w4nOYCKzGmXo0WMs+2ap7xsimy+gUasQgBapiKZGSyKRp3tgiBpNEbvBykYszvBwP5Pj41Cp
+      ptlawtJgQC9CvaOT2cUZ+o88xurCJA91dqBk17BbFUyGarQi1Ns7sdZ30GAQWetwUqiu4+TJ
+      E1SJCk2yiLW2FUkqUGsZot6k3eErbUdXaUZV7P/WP5ai3pvIF5lEmPfPj9He7uBqtMSjLXB1
+      Rc/JI3c/gph/JcNEOPnNFXcgmbn/En1sT5ChNXGob3MOXN/SRT3gbLwN12XHZlrVvmvDZV/f
+      9Y+MrkM0fxlqrtW6VX7j317d4d66Hj729E2i71Q9jMZajOwf//uVyAKOznamJyaJSEYCepBT
+      1m++scyec39ZNAcEU10DU54JrM1WOswVRHIViOqyn9G94OBbdQcQo83FT864vrlimbtOuQPs
+      I748FJ/NZgGoVhX5zQ86dq0vSRKiuPtfWCNKpFKpLXkALz1Ux4nWnd26S6VND67dljq7zOLW
+      eeUvZRrU0rdqo0FVJJVKkcvlMBq/+/hJglIOQbDvSKVSt6QMiqJs5THeK3nAnsvcS3l7TdkG
+      OEBIuXVm/REyyTjBpZVbUqwtlBLRaIxMMk4yc7NnbjwaRVY2FX8x6MfnDyHtKEQmGo1vK11f
+      jZPaSBMIRViLL5OTrr9Tb6uN94DyFOgAkV2e5nd/+A+nj9tYWKvhkNNItc1ObM6H2mTm2KMj
+      7GpLlyQ+OHeeIZuGAE0omQR1tlbyKyG80z6OHh0hupZhfOwqQ+421hIh4ok0Xa5O5qfn6Ozt
+      Zvqql+BShp//7PRNohMBL2O+NT73+BjsaqSnr5ul+Dp2cxWB5TU0ogprq4tkeJbq+iZioSBq
+      XQ2PHx2552/ge/38MrdJm0VkYrmANuHj3BdzhEILLK1KJEKzFEtfd6dASS4hyzJKdhXZYGLm
+      4jl8a1CjE7nw4fssLS+iMzSSXVnC7/djrIJ/v/UvfEtxPBfPIdTaUe/gVmKxO/GMj/NIfwP+
+      dRVXPFM0a9N88PEookqhIMPoufe56JklGJhnOSWzGpglf9d+pVunbAPsQ3abD+eTi0yHVykJ
+      AkJBIL+xhNnZST6VRxTytHe7EXd4paVSKYwGA77pCQKxDIM9dhJFNblEinw6TrZUia1Oy1JS
+      Rq81oFNlKanBUK0nU1AI+fz0DQ1wddKLzmRheKD7pjYqco6Lox56XTbmohI2bY7ZpXUc9TqE
+      Cj2yIpAtQibmo7a5nUJOQpSztLndWw4q98oGKHeAfcheK8PdUK6D0MZboTwF2odUVOxtNL29
+      lnc3ZN6NNt4K5RGgzANNeQQo80BT7gBlHmjKHaDMA83/AarPtdmGL2sRAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
